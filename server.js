@@ -16,6 +16,12 @@ if (process.env.NODE_ENV === "production") {
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
 
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  // we're connected!
+  console.log("WE are connected!")
+});
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
