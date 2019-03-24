@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/ShampooPencil/NYT-Google-Books-Search/issues"
   },
-  "homepage": "https://github.com/ShampooPencil/NYT-Google-Books-Search#readme"
+  "homepage": "https://github.com/ShampooPencil/NYT-Google-Books-Search#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.4.19",
+    "path": "^0.12.7"
+  }
 }
