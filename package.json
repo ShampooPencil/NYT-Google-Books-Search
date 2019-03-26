@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/ShampooPencil/NYT-Google-Books-Search#readme",
   "dependencies": {
+    "axios": "^0.18.0",
+    "create-react-app": "^2.1.8",
     "express": "^4.16.4",
     "mongodb": "^3.2.2",
     "mongoose": "^5.4.19",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react-router-dom": "^5.0.0"
   }
 }

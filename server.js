@@ -25,7 +25,7 @@ db.once('open', function() {
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  res.sendFile(path.join(__dirname, "NYT-Google-Books-Search/creat-react-express/client/public/index.html"));
 });
 
 app.listen(PORT, () => {
